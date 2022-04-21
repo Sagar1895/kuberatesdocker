@@ -2,7 +2,7 @@
     2  cd webapps
     3  ls
     4  cd webapps.dist
-    5  cd ..
+    5  cd 
     6  cd webapps.dist
     7  ls
     8  cp -R * ../webapps
