@@ -1,0 +1,589 @@
+    1  sudo vi /etc/ssh/sshd_config
+    2  ssh sagaronkar@172.31.17.232
+    3  useradd -m sagar
+    4  ls /home
+    5  ssh sagaronkar@172.31.17.232
+    6  sudo su -
+    7  ssh sagaronkar@172.31.17.232
+    8  su - sagar
+    9  sudo su -
+   10  sudo vi /etc/ssh/sshd_config
+   11  ssh sagaronkar@172.31.17.232
+   12  ssh sagarnew@172.31.82.89
+   13  sudo su -
+   14  clear
+   15  ssh sagarnew@172.31.82.89
+   16  sudo su -
+   17  clear
+   18  ls
+   19  vi sagarpem
+   20  cat -n sagarpem
+   21  vi sagarpem
+   22  vi sagarpemkey
+   23  ls
+   24  clear
+   25  ssh sagarnew@172.31.82.89
+   26  ssh sagaronkar@172.31.17.232
+   27  clear
+   28  ls /home
+   29  clear
+   30  ls /home
+   31  cd .ssh
+   32  ls -a
+   33  vi authorized_keys
+   34  cd
+   35  ssh sagaronkar@172.31.17.232
+   36  ls /home
+   37  cd .ssh
+   38  ls
+   39  cat authorized_keys
+   40  vi authorized_keys
+   41  cd
+   42  ssh sagaronkar@172.31.17.232
+   43  ssh ubuntu@172.31.17.232
+   44  sudo vi /etc/ssh/sshd_config
+   45  ssh ubuntu@172.31.17.232
+   46  ssh sagaronkar@172.31.17.232
+   47  clear
+   48  cd .ssh
+   49  ls
+   50  cat authorized_keys
+   51  vi authorized_keys
+   52  cd
+   53  exit
+   54  cd .ssh
+   55  ls 
+   56  ssh-keygen
+   57  ls -s
+   58  ls -a
+   59  cat id_rsa.pub
+   60  ssh sagaronkar@172.31.17.232
+   61  clear
+   62  sudo su -
+   63  sudo su
+   64  clear
+   65  cd /home
+   66  cd
+   67  ls /home
+   68  useradd -m sagaronkar
+   69  sudo useradd -m sagaronkar
+   70  passwd sagaronkar
+   71  sudo passwd sagaronkar
+   72  su - sagaronkar
+   73  exit
+   74  ls
+   75  git --version
+   76  git --wget
+   77  wget --version
+   78  exit
+   79  clear
+   80  sudo su -
+   81  clear
+   82  sudo su -
+   83  cd /opt/tomcat10/
+   84  cd conf/
+   85  pwd
+   86  vi server.xml 
+   87  cd ..
+   88  cd bin/
+   89  ./shutdown.sh
+   90  ./startup.sh
+   91  ./shutdown.sh
+   92  ./startup.sh
+   93  clear
+   94  cd /opt
+   95  ls
+   96  clear
+   97  ls
+   98  sudo su -
+   99  clear
+  100  ls
+  101  cd docker_images/
+  102  ls
+  103  docker images
+  104  cd
+  105  docker run -it ubuntu:20.04
+  106  docker ps -a
+  107  ls
+  108  history>>historyfile
+  109  ls
+  110  docker run -it my-ub-image:latest
+  111  cd docker_images/
+  112  cd
+  113  docker ps -a
+  114  history>>historyfile
+  115  cd docker_images/
+  116  ls
+  117  vi test.sh
+  118  ls
+  119  vi Dockerfile 
+  120  docker build -t my-ub-image:1.0 .
+  121  history>>historyfile
+    1  sudo vi /etc/ssh/sshd_config
+    2  ssh sagaronkar@172.31.17.232
+    3  useradd -m sagar
+    4  ls /home
+    5  ssh sagaronkar@172.31.17.232
+    6  sudo su -
+    7  ssh sagaronkar@172.31.17.232
+    8  su - sagar
+    9  sudo su -
+   10  sudo vi /etc/ssh/sshd_config
+   11  ssh sagaronkar@172.31.17.232
+   12  ssh sagarnew@172.31.82.89
+   13  sudo su -
+   14  clear
+   15  ssh sagarnew@172.31.82.89
+   16  sudo su -
+   17  clear
+   18  ls
+   19  vi sagarpem
+   20  cat -n sagarpem
+   21  vi sagarpem
+   22  vi sagarpemkey
+   23  ls
+   24  clear
+   25  ssh sagarnew@172.31.82.89
+   26  ssh sagaronkar@172.31.17.232
+   27  clear
+   28  ls /home
+   29  clear
+   30  ls /home
+   31  cd .ssh
+   32  ls -a
+   33  vi authorized_keys
+   34  cd
+   35  ssh sagaronkar@172.31.17.232
+   36  ls /home
+   37  cd .ssh
+   38  ls
+   39  cat authorized_keys
+   40  vi authorized_keys
+   41  cd
+   42  ssh sagaronkar@172.31.17.232
+   43  ssh ubuntu@172.31.17.232
+   44  sudo vi /etc/ssh/sshd_config
+   45  ssh ubuntu@172.31.17.232
+   46  ssh sagaronkar@172.31.17.232
+   47  clear
+   48  cd .ssh
+   49  ls
+   50  cat authorized_keys
+   51  vi authorized_keys
+   52  cd
+   53  exit
+   54  cd .ssh
+   55  ls 
+   56  ssh-keygen
+   57  ls -s
+   58  ls -a
+   59  cat id_rsa.pub
+   60  ssh sagaronkar@172.31.17.232
+   61  clear
+   62  sudo su -
+   63  sudo su
+   64  clear
+   65  cd /home
+   66  cd
+   67  ls /home
+   68  useradd -m sagaronkar
+   69  sudo useradd -m sagaronkar
+   70  passwd sagaronkar
+   71  sudo passwd sagaronkar
+   72  su - sagaronkar
+   73  exit
+   74  ls
+   75  git --version
+   76  git --wget
+   77  wget --version
+   78  exit
+   79  clear
+   80  sudo su -
+   81  clear
+   82  sudo su -
+   83  cd /opt/tomcat10/
+   84  cd conf/
+   85  pwd
+   86  vi server.xml 
+   87  cd ..
+   88  cd bin/
+   89  ./shutdown.sh
+   90  ./startup.sh
+   91  ./shutdown.sh
+   92  ./startup.sh
+   93  clear
+   94  cd /opt
+   95  ls
+   96  clear
+   97  ls
+   98  sudo su -
+   99  clear
+  100  cd docker_images/
+  101  ls
+  102  vi Dockerfile 
+  103  cat historyfile 
+  104  docker build -t my-ub-image:1.0 .
+  105  ls
+  106  docker run -it my-ub-image:2.0
+  107  docker run -it my-ub-image:1.0
+  108  clear
+  109  ls
+  110  cd docker_images/
+  111  ls
+  112  docker images
+  113  cd
+  114  docker run -it ubuntu:20.04
+  115  docker ps -a
+  116  ls
+  117  history>>historyfile
+  118  ls
+  119  docker run -it my-ub-image:latest
+  120  cd docker_images/
+  121  cd
+  122  docker ps -a
+  123  history>>historyfile
+  124  cd docker_images/
+  125  ls
+  126  vi test.sh
+  127  ls
+  128  vi Dockerfile 
+  129  docker build -t my-ub-image:1.0 .
+  130  history>>historyfile
+  131  ls
+  132  docker images
+  133  vi Dockerfile 
+  134  docker build -t my-ub-image:1.0 .
+  135  vi Dockerfile 
+  136  docker build -t my-ub-image:1.0 .
+  137  docker run -it my-ub-image:1.0
+  138  ps -a
+  139  docker ps -a
+  140  vi Dockerfile 
+  141  docker build -t my-ub-image:1.0 .
+  142  docker run -it my-ub-image:1.0
+  143  clear
+  144  cd docker_images/
+  145  ls
+  146  vi Dockerfile 
+  147  docker build -t my-ub-image:1.0 .
+  148  docker run -it my-ub-image:1.0
+  149  clear
+  150  docker build -t my-ub-image:1.0 .
+  151  docker run -it my-ub-image:1.0
+  152  clear
+  153  cd docker_images/
+  154  ls
+  155  vi Dockerfile 
+  156  docker build -t my-ub-image:1.0 .
+  157  docker run -it my-ub-image:1.0
+  158  clear
+  159  ls
+  160  cd /opt
+  161  ls
+  162  cd tomcat10/
+  163  ls
+  164  cd
+  165  ls -a
+  166  cd .ssh
+  167  ls
+  168  cd
+  169  apt install wget
+  170  sudo apt install wget
+  171  wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.60/bin/apache-tomcat-9.0.60.tar.gz
+  172  sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.60/bin/apache-tomcat-9.0.60.tar.gz
+  173  wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.20/bin/apache-tomcat-10.0.20.tar.gz
+  174  ls
+  175  pwd
+  176  cd docker_images/
+  177  ls
+  178  vi Dockerfile 
+  179  cd
+  180  ls
+  181  cd docker_images/
+  182  vi Dockerfile 
+  183  docker build -t my-ub-image:1.0 .
+  184  cd
+  185  pwd
+  186  ls
+  187  cd docker_images/
+  188  vi Dockerfile 
+  189  docker build -t my-ub-image:1.0 .
+  190  vi Dockerfile 
+  191  docker build -t my-ub-image:1.0 .
+  192  vi Dockerfile 
+  193  docker build -t my-ub-image:1.0 .
+  194  vi Dockerfile 
+  195  docker build -t my-ub-image:1.0 .
+  196  wget ADD failed: file not found in build context or excluded by .dockerignore: stat home/ubuntu/apache-tomcat-10.0.20.tar.gz: file does not e
+  197  cd
+  198  cd docker_images/
+  199  wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.20/bin/apache-tomcat-10.0.20.tar.gz
+  200  ls
+  201  vi Dockerfile 
+  202  docker build -t my-ub-image:1.0 .
+  203  vi Dockerfile 
+  204  docker build -t my-ub-image:1.0 .
+  205  ls
+  206  docker run -it my-ub-image:1.0
+  207  docker build -t my-ub-image:1.0 .
+  208  docker run -it my-ub-image:1.0
+  209  cd docker_images/
+  210  ls
+  211  vi Dockerfile 
+  212  clear
+  213  cd docker_images/
+  214  ls
+  215  docker images
+  216  sudo /var/run/docker.sock
+  217  sudo chmod 777 /var/run/docker.sock
+  218  docker images
+  219  clear
+  220  docker images
+  221  docket run -d my-ub-image .
+  222  docket run -d my-ub-image
+  223  docker run -d my-ub-image
+  224  docker ps -a
+  225  docker exec -it e9b8563229bb 
+  226  docker exec -it e9b8563229bb bash
+  227  docker ps
+  228  docker run -d my-ub-image
+  229  docker ps
+  230  docker run -it my-ub-image .
+  231  docker run -it my-ub-image
+  232  docker ps
+  233  docker run -d my-ub-image
+  234  docker ps
+  235  docker build -id my-ub-image .
+  236  cat historyfile 
+  237  docker build -t my-ub-image:1.0 .
+  238  docker run -d my-ub-image:1.0
+  239  ps -s
+  240  ps -a
+  241  docker ps -a
+  242  docker ps
+  243  history>>historyfile
+    1  sudo vi /etc/ssh/sshd_config
+    2  ssh sagaronkar@172.31.17.232
+    3  useradd -m sagar
+    4  ls /home
+    5  ssh sagaronkar@172.31.17.232
+    6  sudo su -
+    7  ssh sagaronkar@172.31.17.232
+    8  su - sagar
+    9  sudo su -
+   10  sudo vi /etc/ssh/sshd_config
+   11  ssh sagaronkar@172.31.17.232
+   12  ssh sagarnew@172.31.82.89
+   13  sudo su -
+   14  clear
+   15  ssh sagarnew@172.31.82.89
+   16  sudo su -
+   17  clear
+   18  ls
+   19  vi sagarpem
+   20  cat -n sagarpem
+   21  vi sagarpem
+   22  vi sagarpemkey
+   23  ls
+   24  clear
+   25  ssh sagarnew@172.31.82.89
+   26  ssh sagaronkar@172.31.17.232
+   27  clear
+   28  ls /home
+   29  clear
+   30  ls /home
+   31  cd .ssh
+   32  ls -a
+   33  vi authorized_keys
+   34  cd
+   35  ssh sagaronkar@172.31.17.232
+   36  ls /home
+   37  cd .ssh
+   38  ls
+   39  cat authorized_keys
+   40  vi authorized_keys
+   41  cd
+   42  ssh sagaronkar@172.31.17.232
+   43  ssh ubuntu@172.31.17.232
+   44  sudo vi /etc/ssh/sshd_config
+   45  ssh ubuntu@172.31.17.232
+   46  ssh sagaronkar@172.31.17.232
+   47  clear
+   48  cd .ssh
+   49  ls
+   50  cat authorized_keys
+   51  vi authorized_keys
+   52  cd
+   53  exit
+   54  cd .ssh
+   55  ls 
+   56  ssh-keygen
+   57  ls -s
+   58  ls -a
+   59  cat id_rsa.pub
+   60  ssh sagaronkar@172.31.17.232
+   61  clear
+   62  sudo su -
+   63  sudo su
+   64  clear
+   65  cd /home
+   66  cd
+   67  ls /home
+   68  useradd -m sagaronkar
+   69  sudo useradd -m sagaronkar
+   70  passwd sagaronkar
+   71  sudo passwd sagaronkar
+   72  su - sagaronkar
+   73  exit
+   74  ls
+   75  git --version
+   76  git --wget
+   77  wget --version
+   78  exit
+   79  clear
+   80  sudo su -
+   81  clear
+   82  sudo su -
+   83  cd /opt/tomcat10/
+   84  cd conf/
+   85  pwd
+   86  vi server.xml 
+   87  cd ..
+   88  cd bin/
+   89  ./shutdown.sh
+   90  ./startup.sh
+   91  ./shutdown.sh
+   92  ./startup.sh
+   93  clear
+   94  cd /opt
+   95  ls
+   96  clear
+   97  ls
+   98  sudo su -
+   99  clear
+  100  cd docker_images/
+  101  ls
+  102  vi Dockerfile 
+  103  cat historyfile 
+  104  docker build -t my-ub-image:1.0 .
+  105  ls
+  106  docker run -it my-ub-image:2.0
+  107  docker run -it my-ub-image:1.0
+  108  clear
+  109  ls
+  110  cd docker_images/
+  111  ls
+  112  docker images
+  113  cd
+  114  docker run -it ubuntu:20.04
+  115  docker ps -a
+  116  ls
+  117  history>>historyfile
+  118  ls
+  119  docker run -it my-ub-image:latest
+  120  cd docker_images/
+  121  cd
+  122  docker ps -a
+  123  history>>historyfile
+  124  cd docker_images/
+  125  ls
+  126  vi test.sh
+  127  ls
+  128  vi Dockerfile 
+  129  docker build -t my-ub-image:1.0 .
+  130  history>>historyfile
+  131  ls
+  132  docker images
+  133  vi Dockerfile 
+  134  docker build -t my-ub-image:1.0 .
+  135  vi Dockerfile 
+  136  docker build -t my-ub-image:1.0 .
+  137  docker run -it my-ub-image:1.0
+  138  ps -a
+  139  docker ps -a
+  140  vi Dockerfile 
+  141  docker build -t my-ub-image:1.0 .
+  142  docker run -it my-ub-image:1.0
+  143  clear
+  144  cd docker_images/
+  145  ls
+  146  vi Dockerfile 
+  147  docker build -t my-ub-image:1.0 .
+  148  docker run -it my-ub-image:1.0
+  149  clear
+  150  docker build -t my-ub-image:1.0 .
+  151  docker run -it my-ub-image:1.0
+  152  clear
+  153  cd docker_images/
+  154  ls
+  155  vi Dockerfile 
+  156  docker build -t my-ub-image:1.0 .
+  157  docker run -it my-ub-image:1.0
+  158  clear
+  159  ls
+  160  cd /opt
+  161  ls
+  162  cd tomcat10/
+  163  ls
+  164  cd
+  165  ls -a
+  166  cd .ssh
+  167  ls
+  168  cd
+  169  apt install wget
+  170  sudo apt install wget
+  171  wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.60/bin/apache-tomcat-9.0.60.tar.gz
+  172  sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.60/bin/apache-tomcat-9.0.60.tar.gz
+  173  wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.20/bin/apache-tomcat-10.0.20.tar.gz
+  174  ls
+  175  pwd
+  176  cd docker_images/
+  177  ls
+  178  vi Dockerfile 
+  179  cd
+  180  ls
+  181  cd docker_images/
+  182  vi Dockerfile 
+  183  docker build -t my-ub-image:1.0 .
+  184  cd
+  185  pwd
+  186  ls
+  187  cd docker_images/
+  188  vi Dockerfile 
+  189  docker build -t my-ub-image:1.0 .
+  190  vi Dockerfile 
+  191  docker build -t my-ub-image:1.0 .
+  192  vi Dockerfile 
+  193  docker build -t my-ub-image:1.0 .
+  194  vi Dockerfile 
+  195  docker build -t my-ub-image:1.0 .
+  196  wget ADD failed: file not found in build context or excluded by .dockerignore: stat home/ubuntu/apache-tomcat-10.0.20.tar.gz: file does not e
+  197  cd
+  198  cd docker_images/
+  199  wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.20/bin/apache-tomcat-10.0.20.tar.gz
+  200  ls
+  201  vi Dockerfile 
+  202  docker build -t my-ub-image:1.0 .
+  203  vi Dockerfile 
+  204  docker build -t my-ub-image:1.0 .
+  205  ls
+  206  docker run -it my-ub-image:1.0
+  207  docker build -t my-ub-image:1.0 .
+  208  docker run -it my-ub-image:1.0
+  209  cd docker_images/
+  210  ls
+  211  vi Dockerfile 
+  212  clear
+  213  cd docker_images/
+  214  docker run -it tomcat:9.0
+  215  docker ps -a
+  216  docker run -d tomcat:9.0
+  217  docker ps
+  218  docker rm 0993224d3a66 
+  219  docker ps
+  220  sudo docker rm 0993224d3a66 
+  221  docker stop 0993224d3a66 
+  222  docker ps
+  223  docker rm -f 0993224d3a66 
+  224  docker run -d -p 8080:8080 tomcat:9.0
+  225  history>>historyfile
