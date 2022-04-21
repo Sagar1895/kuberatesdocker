@@ -1,0 +1,507 @@
+    1  clear
+    2  sudo apt update
+    3  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+    4  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    5  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+    6  apt-cache policy docker-ce
+    7  sudo apt install docker-ce
+    8  sudo systemctl status docker
+    9  docker --version
+   10  mkdir dockerimages
+   11  ls
+   12  cd dockerimages/
+   13  docker run -d -p 8080:8080 -p 50006:50000 jenkins/jenkins:lts-jdk11
+   14  sudo chmod 777 /var/run/docker.sock
+   15  docker run -d -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts-jdk11
+   16  docker ps
+   17  docker exec -it ffa9cc2ba756 bash
+   18  clear
+   19  mkdir -p /var/lib/jenkins/.ssh
+   20  docker ps
+   21  docker exec -it ffa9cc2ba756 bash
+   22  clear
+   23  docker exec -it ffa9cc2ba756 bash
+   24  clear
+   25  docker ps
+   26  sudo chmod 777 /var/run/docker.sock
+   27  docker ps
+   28  docker pull tomcat
+   29  mkdir -p tomcatwar
+   30  git clone https://github.com/Sagar1895/hello-world-war.git
+   31  ls
+   32  cd hello-world-war/
+   33  ls
+   34  cd dist/
+   35  ls
+   36  cp -R hello-world.war /home/ubuntu/tomcatwar/
+   37  cd 
+   38  docker ps
+   39  docker ps -a
+   40  docker images
+   41  docker run -d -p 8082:8080 -v /home/ubuntu/tomcatwar:/usr/local/tomcat/webapps b00440a36b99
+   42  docker ps 
+   43  docker exec -it 61d1
+   44  docker exec -it 61d1 bash
+   45  docker ps
+   46  docker restart 61d1
+   47  docker exec -it 61d1 bash
+   48  docker restart 61d1
+   49  ls
+   50  history>>historyfile 
+   51  docker exec -it 61d1
+   52  docker exec -it 61d1 bash
+   53  ls
+   54  cd hello-world-war/
+   55  ls
+   56  cd dist/
+   57  ls
+   58  cd
+   59  cd tomcatwar/
+   60  ls
+   61  mdkir -p sagar
+   62  ls
+   63  mkdir -p sagar
+   64  ls
+   65  cd ..
+   66  docker ps
+   67  docker exec -it 61d1 bash
+   68  cd tomcatwar/
+   69  ls
+   70  history histroryfile
+   71  history>>histroryfile
+   72  ls
+   73  mkdir -p sagar
+   74  ls
+   75  cd
+   76  docker exec -t 61d1 bash
+   77  docker exec -it 61d1 bash
+   78  docker ps
+   79  cd hello-world-war/
+   80  ls
+   81  cd ..
+   82  ls
+   83  cd tomcatwar/
+   84  ls
+   85  cd ..
+   86  cd hello-world-war/
+   87  ls
+   88  cd dist/
+   89  ls
+   90  docker cp hello-world.war 61d1:/usr/local/tomcat/webapps
+   91  ls
+   92  cd
+   93  ls
+   94  history >>historyfile 
+   95  cd tomcatwar/
+   96  ls
+   97  vi histroryfile 
+   98  ls
+   99  cd ..
+  100  vi historyfile 
+  101  ls
+  102  history
+  103  history>history
+    1  clear
+    2  sudo apt update
+    3  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+    4  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    5  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+    6  apt-cache policy docker-ce
+    7  sudo apt install docker-ce
+    8  sudo systemctl status docker
+    9  docker --version
+   10  mkdir dockerimages
+   11  ls
+   12  cd dockerimages/
+   13  docker run -d -p 8080:8080 -p 50006:50000 jenkins/jenkins:lts-jdk11
+   14  sudo chmod 777 /var/run/docker.sock
+   15  docker run -d -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts-jdk11
+   16  docker ps
+   17  docker exec -it ffa9cc2ba756 bash
+   18  clear
+   19  mkdir -p /var/lib/jenkins/.ssh
+   20  docker ps
+   21  docker exec -it ffa9cc2ba756 bash
+   22  clear
+   23  docker exec -it ffa9cc2ba756 bash
+   24  clear
+   25  docker ps
+   26  sudo chmod 777 /var/run/docker.sock
+   27  docker ps
+   28  docker pull tomcat
+   29  mkdir -p tomcatwar
+   30  git clone https://github.com/Sagar1895/hello-world-war.git
+   31  ls
+   32  cd hello-world-war/
+   33  ls
+   34  cd dist/
+   35  ls
+   36  cp -R hello-world.war /home/ubuntu/tomcatwar/
+   37  cd 
+   38  docker ps
+   39  docker ps -a
+   40  docker images
+   41  docker run -d -p 8082:8080 -v /home/ubuntu/tomcatwar:/usr/local/tomcat/webapps b00440a36b99
+   42  docker ps 
+   43  docker exec -it 61d1
+   44  docker exec -it 61d1 bash
+   45  docker ps
+   46  docker restart 61d1
+   47  docker exec -it 61d1 bash
+   48  docker restart 61d1
+   49  ls
+   50  history>>historyfile 
+   51  docker exec -it 61d1
+   52  docker exec -it 61d1 bash
+   53  ls
+   54  cd hello-world-war/
+   55  ls
+   56  cd dist/
+   57  ls
+   58  cd
+   59  cd tomcatwar/
+   60  ls
+   61  mdkir -p sagar
+   62  ls
+   63  mkdir -p sagar
+   64  ls
+   65  cd ..
+   66  docker ps
+   67  docker exec -it 61d1 bash
+   68  cd tomcatwar/
+   69  ls
+   70  history histroryfile
+   71  history>>histroryfile
+   72  ls
+   73  mkdir -p sagar
+   74  ls
+   75  cd
+   76  docker exec -t 61d1 bash
+   77  docker exec -it 61d1 bash
+   78  docker ps
+   79  cd hello-world-war/
+   80  ls
+   81  cd ..
+   82  ls
+   83  cd tomcatwar/
+   84  ls
+   85  cd ..
+   86  cd hello-world-war/
+   87  ls
+   88  cd dist/
+   89  ls
+   90  docker cp hello-world.war 61d1:/usr/local/tomcat/webapps
+   91  ls
+   92  cd
+   93  ls
+   94  history >>historyfile 
+   95  cd tomcatwar/
+   96  ls
+   97  vi histroryfile 
+   98  ls
+   99  cd ..
+  100  vi historyfile 
+  101  ls
+  102  history
+  103  history>history
+  104  ls
+  105  cat -n history
+  106  docker exec -it 61d1 bash
+  107  ls
+  108  mkdir -p 
+  109  war-web-project
+  110  mkdir -p 
+  111  war-web-project
+  112  mkdir -p warwebproject
+  113  ls
+  114  git clone https://github.com/koddas/war-web-project.git
+  115  ls
+  116  cd war-web-project/
+  117  ls
+  118  cd ..
+  119  cd hello-world-war/
+  120  ls
+  121  cd dist/
+  122  ls
+  123  cd war-web-project
+  124  cd ..
+  125  cd
+  126  cd war-web-project/
+  127  ls
+  128  cd 
+  129  vi history
+  130  git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello
+  131  ls
+  132  cd boxfuse-sample-java-war-hello/
+  133  ls
+  134  mvn clean package
+  135  sudo apt install maven
+  136  ls
+  137  mvn clean package
+  138  ls
+  139  cd target/
+  140  ls
+  141  cd 
+  142  vi history
+  143  ls
+  144  cd boxfuse-sample-java-war-hello/
+  145  ls
+  146  cd target/
+  147  ls
+  148  cp -R hello-1.0.war /home/ubuntu/warwebproject/
+  149  cd
+  150  cd  tomcatwar/
+  151  ls
+  152  vi history
+  153  cd
+  154  history
+  155  docker images
+  156  docker pull mywar
+  157  docker run -d -p 8089:8080 -v /home/ubuntu/warwebproject/:/usr/local/tomcat/webapps b00440a36b99
+  158  docker ps
+  159  docker exec -it fd06 bash
+  160  docker restart fd06
+  161  docker ps
+  162  docker exec -it fd06 bash
+  163  docker ps -a
+  164  docker ps
+  165  docker restart fd06
+  166  ls
+  167  cd warwebproject/
+  168  ls
+  169  cd
+  170  cd tomcatwar/
+  171  ls
+  172  cd
+  173  docker exec -it fd06 bash
+  174  ls
+  175  ls tomcatwar/
+  176  ls warwebproject/
+  177  pwd
+  178  docker exec -it fd06 bash
+  179  ls
+  180  cd warwebproject/
+  181  ls
+  182  aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 875107476465.dkr.ecr.us-east-1.amazonaws.com
+  183  sudo apt install awscli
+  184  aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 875107476465.dkr.ecr.us-east-1.amazonaws.com
+  185  ls
+  186  docker image
+  187  docker images
+  188  docker tag tomcat:latest  875107476465.dkr.ecr.us-east-1.amazonaws.com/sagarrepo:1.0
+  189  docker tag tomcat:latest 875107476465.dkr.ecr.us-east-1.amazonaws.com/sagarrepo:1.0
+  190  docker images
+  191  docker push 875107476465.dkr.ecr.us-east-1.amazonaws.com/sagarrepo 
+  192  docker push 875107476465.dkr.ecr.us-east-1.amazonaws.com/sagarrepo:1.0 
+  193  ls
+  194  history>>history
+    1  clear
+    2  sudo apt update
+    3  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+    4  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    5  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+    6  apt-cache policy docker-ce
+    7  sudo apt install docker-ce
+    8  sudo systemctl status docker
+    9  docker --version
+   10  mkdir dockerimages
+   11  ls
+   12  cd dockerimages/
+   13  docker run -d -p 8080:8080 -p 50006:50000 jenkins/jenkins:lts-jdk11
+   14  sudo chmod 777 /var/run/docker.sock
+   15  docker run -d -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts-jdk11
+   16  docker ps
+   17  docker exec -it ffa9cc2ba756 bash
+   18  clear
+   19  mkdir -p /var/lib/jenkins/.ssh
+   20  docker ps
+   21  docker exec -it ffa9cc2ba756 bash
+   22  clear
+   23  docker exec -it ffa9cc2ba756 bash
+   24  clear
+   25  docker ps
+   26  sudo chmod 777 /var/run/docker.sock
+   27  docker ps
+   28  docker pull tomcat
+   29  mkdir -p tomcatwar
+   30  git clone https://github.com/Sagar1895/hello-world-war.git
+   31  ls
+   32  cd hello-world-war/
+   33  ls
+   34  cd dist/
+   35  ls
+   36  cp -R hello-world.war /home/ubuntu/tomcatwar/
+   37  cd 
+   38  docker ps
+   39  docker ps -a
+   40  docker images
+   41  docker run -d -p 8082:8080 -v /home/ubuntu/tomcatwar:/usr/local/tomcat/webapps b00440a36b99
+   42  docker ps 
+   43  docker exec -it 61d1
+   44  docker exec -it 61d1 bash
+   45  docker ps
+   46  docker restart 61d1
+   47  docker exec -it 61d1 bash
+   48  docker restart 61d1
+   49  ls
+   50  history>>historyfile 
+   51  docker exec -it 61d1
+   52  docker exec -it 61d1 bash
+   53  ls
+   54  cd hello-world-war/
+   55  ls
+   56  cd dist/
+   57  ls
+   58  cd
+   59  cd tomcatwar/
+   60  ls
+   61  mdkir -p sagar
+   62  ls
+   63  mkdir -p sagar
+   64  ls
+   65  cd ..
+   66  docker ps
+   67  docker exec -it 61d1 bash
+   68  cd tomcatwar/
+   69  ls
+   70  history histroryfile
+   71  history>>histroryfile
+   72  ls
+   73  mkdir -p sagar
+   74  ls
+   75  cd
+   76  docker exec -t 61d1 bash
+   77  docker exec -it 61d1 bash
+   78  docker ps
+   79  cd hello-world-war/
+   80  ls
+   81  cd ..
+   82  ls
+   83  cd tomcatwar/
+   84  ls
+   85  cd ..
+   86  cd hello-world-war/
+   87  ls
+   88  cd dist/
+   89  ls
+   90  docker cp hello-world.war 61d1:/usr/local/tomcat/webapps
+   91  ls
+   92  cd
+   93  ls
+   94  history >>historyfile 
+   95  cd tomcatwar/
+   96  ls
+   97  vi histroryfile 
+   98  ls
+   99  cd ..
+  100  vi historyfile 
+  101  ls
+  102  history
+  103  history>history
+  104  ls
+  105  cat -n history
+  106  docker exec -it 61d1 bash
+  107  ls
+  108  mkdir -p 
+  109  war-web-project
+  110  mkdir -p 
+  111  war-web-project
+  112  mkdir -p warwebproject
+  113  ls
+  114  git clone https://github.com/koddas/war-web-project.git
+  115  ls
+  116  cd war-web-project/
+  117  ls
+  118  cd ..
+  119  cd hello-world-war/
+  120  ls
+  121  cd dist/
+  122  ls
+  123  cd war-web-project
+  124  cd ..
+  125  cd
+  126  cd war-web-project/
+  127  ls
+  128  cd 
+  129  vi history
+  130  git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello
+  131  ls
+  132  cd boxfuse-sample-java-war-hello/
+  133  ls
+  134  mvn clean package
+  135  sudo apt install maven
+  136  ls
+  137  mvn clean package
+  138  ls
+  139  cd target/
+  140  ls
+  141  cd 
+  142  vi history
+  143  ls
+  144  cd boxfuse-sample-java-war-hello/
+  145  ls
+  146  cd target/
+  147  ls
+  148  cp -R hello-1.0.war /home/ubuntu/warwebproject/
+  149  cd
+  150  cd  tomcatwar/
+  151  ls
+  152  vi history
+  153  cd
+  154  history
+  155  docker images
+  156  docker pull mywar
+  157  docker run -d -p 8089:8080 -v /home/ubuntu/warwebproject/:/usr/local/tomcat/webapps b00440a36b99
+  158  docker ps
+  159  docker exec -it fd06 bash
+  160  docker restart fd06
+  161  docker ps
+  162  docker exec -it fd06 bash
+  163  docker ps -a
+  164  docker ps
+  165  docker restart fd06
+  166  ls
+  167  cd warwebproject/
+  168  ls
+  169  cd
+  170  cd tomcatwar/
+  171  ls
+  172  cd
+  173  docker exec -it fd06 bash
+  174  ls
+  175  ls tomcatwar/
+  176  ls warwebproject/
+  177  pwd
+  178  docker exec -it fd06 bash
+  179  ls
+  180  cd warwebproject/
+  181  ls
+  182  aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 875107476465.dkr.ecr.us-east-1.amazonaws.com
+  183  sudo apt install awscli
+  184  aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 875107476465.dkr.ecr.us-east-1.amazonaws.com
+  185  ls
+  186  docker image
+  187  docker images
+  188  docker tag tomcat:latest  875107476465.dkr.ecr.us-east-1.amazonaws.com/sagarrepo:1.0
+  189  docker tag tomcat:latest 875107476465.dkr.ecr.us-east-1.amazonaws.com/sagarrepo:1.0
+  190  docker images
+  191  docker push 875107476465.dkr.ecr.us-east-1.amazonaws.com/sagarrepo 
+  192  docker push 875107476465.dkr.ecr.us-east-1.amazonaws.com/sagarrepo:1.0 
+  193  ls
+  194  history>>history
+  195  docker ps
+  196  docker ps -a
+  197  docker start 606a
+  198  docker ps
+  199  docker commit 606a 
+  200  docker images
+  201  docker tag 86420 myjenkins
+  202  docker images
+  203  docker run -d -p  8099:8080 -p 50010:50000  myjenkins:latest 
+  204  docker ps
+  205  docker inspect 606ad4ff890c
+  206  docker inspect 606ad4ff890c >sagarjenkins
+  207  cat sagarjenkins 
+  208  vi sagarjenkins 
+  209  clear
+  210  history>>history

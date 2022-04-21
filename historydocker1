@@ -1,0 +1,177 @@
+    1  clear
+    2  sudo apt update
+    3  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+    4  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    5  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+    6  apt-cache policy docker-ce
+    7  sudo apt install docker-ce
+    8  sudo systemctl status docker
+    9  docker --version
+   10  mkdir dockerimages
+   11  ls
+   12  cd dockerimages/
+   13  docker run -d -p 8080:8080 -p 50006:50000 jenkins/jenkins:lts-jdk11
+   14  sudo chmod 777 /var/run/docker.sock
+   15  docker run -d -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts-jdk11
+   16  docker ps
+   17  docker exec -it ffa9cc2ba756 bash
+   18  clear
+   19  mkdir -p /var/lib/jenkins/.ssh
+   20  docker ps
+   21  docker exec -it ffa9cc2ba756 bash
+   22  clear
+   23  docker exec -it ffa9cc2ba756 bash
+   24  clear
+   25  docker ps
+   26  sudo chmod 777  /var/run/docker.sock
+   27  docker ps
+   28  docker images
+   29  docker run -d -p jenkins/jenkins:lts-jdk11
+   30  docker run -d -P jenkins/jenkins:lts-jdk11
+   31  docker ps
+   32  ls
+   33  history>historyfile
+    1  clear
+    2  sudo apt update
+    3  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+    4  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    5  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+    6  apt-cache policy docker-ce
+    7  sudo apt install docker-ce
+    8  sudo systemctl status docker
+    9  docker --version
+   10  mkdir dockerimages
+   11  ls
+   12  cd dockerimages/
+   13  docker run -d -p 8080:8080 -p 50006:50000 jenkins/jenkins:lts-jdk11
+   14  sudo chmod 777 /var/run/docker.sock
+   15  docker run -d -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts-jdk11
+   16  docker ps
+   17  docker exec -it ffa9cc2ba756 bash
+   18  clear
+   19  mkdir -p /var/lib/jenkins/.ssh
+   20  docker ps
+   21  docker exec -it ffa9cc2ba756 bash
+   22  clear
+   23  docker exec -it ffa9cc2ba756 bash
+   24  clear
+   25  docker ps
+   26  sudo chmod 777 /var/run/docker.sock
+   27  docker ps
+   28  docker pull tomcat
+   29  mkdir -p tomcatwar
+   30  git clone https://github.com/Sagar1895/hello-world-war.git
+   31  ls
+   32  cd hello-world-war/
+   33  ls
+   34  cd dist/
+   35  ls
+   36  cp -R hello-world.war /home/ubuntu/tomcatwar/
+   37  cd 
+   38  docker ps
+   39  docker ps -a
+   40  docker images
+   41  docker run -d -p 8082:8080 -v /home/ubuntu/tomcatwar:/usr/local/tomcat/webapps b00440a36b99
+   42  docker ps 
+   43  docker exec -it 61d1
+   44  docker exec -it 61d1 bash
+   45  docker ps
+   46  docker restart 61d1
+   47  docker exec -it 61d1 bash
+   48  docker restart 61d1
+   49  ls
+   50  history>>historyfile 
+    1  clear
+    2  sudo apt update
+    3  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+    4  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    5  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+    6  apt-cache policy docker-ce
+    7  sudo apt install docker-ce
+    8  sudo systemctl status docker
+    9  docker --version
+   10  mkdir dockerimages
+   11  ls
+   12  cd dockerimages/
+   13  docker run -d -p 8080:8080 -p 50006:50000 jenkins/jenkins:lts-jdk11
+   14  sudo chmod 777 /var/run/docker.sock
+   15  docker run -d -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts-jdk11
+   16  docker ps
+   17  docker exec -it ffa9cc2ba756 bash
+   18  clear
+   19  mkdir -p /var/lib/jenkins/.ssh
+   20  docker ps
+   21  docker exec -it ffa9cc2ba756 bash
+   22  clear
+   23  docker exec -it ffa9cc2ba756 bash
+   24  clear
+   25  docker ps
+   26  sudo chmod 777 /var/run/docker.sock
+   27  docker ps
+   28  docker pull tomcat
+   29  mkdir -p tomcatwar
+   30  git clone https://github.com/Sagar1895/hello-world-war.git
+   31  ls
+   32  cd hello-world-war/
+   33  ls
+   34  cd dist/
+   35  ls
+   36  cp -R hello-world.war /home/ubuntu/tomcatwar/
+   37  cd 
+   38  docker ps
+   39  docker ps -a
+   40  docker images
+   41  docker run -d -p 8082:8080 -v /home/ubuntu/tomcatwar:/usr/local/tomcat/webapps b00440a36b99
+   42  docker ps 
+   43  docker exec -it 61d1
+   44  docker exec -it 61d1 bash
+   45  docker ps
+   46  docker restart 61d1
+   47  docker exec -it 61d1 bash
+   48  docker restart 61d1
+   49  ls
+   50  history>>historyfile 
+   51  docker exec -it 61d1
+   52  docker exec -it 61d1 bash
+   53  ls
+   54  cd hello-world-war/
+   55  ls
+   56  cd dist/
+   57  ls
+   58  cd
+   59  cd tomcatwar/
+   60  ls
+   61  mdkir -p sagar
+   62  ls
+   63  mkdir -p sagar
+   64  ls
+   65  cd ..
+   66  docker ps
+   67  docker exec -it 61d1 bash
+   68  cd tomcatwar/
+   69  ls
+   70  history histroryfile
+   71  history>>histroryfile
+   72  ls
+   73  mkdir -p sagar
+   74  ls
+   75  cd
+   76  docker exec -t 61d1 bash
+   77  docker exec -it 61d1 bash
+   78  docker ps
+   79  cd hello-world-war/
+   80  ls
+   81  cd ..
+   82  ls
+   83  cd tomcatwar/
+   84  ls
+   85  cd ..
+   86  cd hello-world-war/
+   87  ls
+   88  cd dist/
+   89  ls
+   90  docker cp hello-world.war 61d1:/usr/local/tomcat/webapps
+   91  ls
+   92  cd
+   93  ls
+   94  history >>historyfile 
