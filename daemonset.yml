@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata: 
+  name: daemon
+spec: 
+  selector:
+    matchLabels:
+      app: jenkinsreplica1
+  template: 
+    metadata: 
+      name: singlecontainer
+      labels: 
+        app: jenkinsreplica1
+    spec: 
+       containers:
+         - name: tomcat
+           image: tomcat:latest

@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: replica1
+spec: 
+  replicas: 4
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 2
+      maxUnavailable: 1
+  selector:
+    matchLabels:
+      app: jenkinsreplica1
+  template: 
+    metadata: 
+      name: singlecontainer
+      labels: 
+        app: jenkinsreplica1
+    spec: 
+       tolerations:
+         - key: "colour"
+           operator: "equal"
+           value: "blue"
+           effect: "NoSchedule"
+       containers:
+         - name: tomcat
+           image: tomcat:latest

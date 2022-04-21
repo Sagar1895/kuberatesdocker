@@ -1,0 +1,633 @@
+    1  ls
+    2  vi dockerinstall.sh
+    3  ls
+    4  vi dockerinstall.sh
+    5  sh dockerinstall.sh 
+    6  sudo hostnamectl set-hostname "k8s-master"
+    7  .
+    8  swapoff -a
+    9  vi /etc/sysctl.conf
+   10  sudo sysctl -p
+   11  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add
+   12  sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
+   13  sudo apt update
+   14  sudo apt install -y kubelet kubeadm kubectl
+   15  kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address=172.31.82.203
+   16  mkdir -p $HOME/.kube
+   17  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+   18  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+   19  export KUBECONFIG=/etc/kubernetes/admin.conf
+   20  kubectl get nodes
+   21  kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
+   22  kubectl get nodes
+   23  kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
+   24  kubectl get nodes
+   25  kubectl get nodes
+   26  kubectl getpodes -A
+   27  kubeadm token create --print-join-command
+   28  kubectl get nodes
+   29  kubectl getpodes -A
+   30  kubectl get pods -A
+   31  kubectl get nodes
+   32  kubectl get pods -A
+   33  kubectl get pods
+   34  vi mypod.yml
+   35  vi service2.yml 
+   36  kubectl apply -f service2.yml 
+   37  exit
+   38  clear
+   39  vi mypod.yml 
+   40  kubectl apply -f mypod.yml 
+   41  vi mypod.yml 
+   42  kubectl apply -f mypod.yml 
+   43  kubectl get pods
+   44  kubectl get pods -owide
+   45  kubectl get services
+   46  vi myservice.yml
+   47  kubectl apply -f myservice.yml 
+   48  vi myservice.yml
+   49  kubectl apply -f myservice.yml 
+   50  vi myservice.yml
+   51  kubectl apply -f myservice.yml 
+   52  kubectl get services
+   53  kubectl apply -f myservice.yml 
+   54  vi myservice.yml
+   55  kubectl apply -f myservice.yml 
+   56  vi myservice.yml
+   57  kubectl get pods
+   58  vi service2.yml
+   59  kubectl apply -f service2.yml 
+   60  vi service2.yml
+   61  kubectl apply -f service2.yml 
+   62  vi service2.yml
+   63  kubectl apply -f service2.yml 
+   64  ls
+   65  cat mypod.yml 
+   66  kubectl get services
+   67  vi service2.yml
+   68  kubectl apply -f service2.yml 
+   69  vi service2.yml
+   70  kubectl apply -f service2.yml 
+   71  vi service2.yml
+   72  kubectl apply -f service2.yml 
+   73  vi service2.yml 
+   74  hubectl get pods
+   75  kubectl get pods
+   76  vi mypod.yml 
+   77  kubectl apply -f mypod.yml 
+   78  kubectl apply -f service2.yml 
+   79  vi service2.yml 
+   80  kubectl apply -f service2.yml 
+   81  vi service2.yml 
+   82  kubectl apply -f service2.yml 
+   83  kubectl get services
+   84  kubectl get pods
+   85  kubectl exec -it multicontainers -c jenkins -- /bin/bash
+   86  vi service2.yml 
+   87  kubectl get pods
+   88  vi mypod2.yml
+   89  ls
+   90  cat mypod.yml
+   91  vi mypod2.yml
+   92  kubectl apply -f mypod2.yml
+   93  vi mypod2.yml
+   94  kubectl apply -f mypod2.yml
+   95  vi mypod2.yml
+   96  kubectl apply -f mypod2.yml
+   97  vi mypod2.yml
+   98  kubectl apply -f mypod2.yml
+   99  kobectl get pods
+  100  kubectl get pods
+  101  kubectl get nodes
+  102  kubectl delete pod replica1-kbvd6
+  103  kubectl get pods
+  104  kubectl get replicaset
+  105  vi mypod2.yml
+  106  kubectl apply -f mypod2.yml
+  107  kubectl get replicaset
+  108  kubectl get pods
+  109  vi replicaservice.yml
+  110  kubectl apply -f replicaservice.yml 
+  111  vi replicaservice.yml
+  112  kubectl apply -f replicaservice.yml 
+  113  kubectl get services
+  114  kubectl get pods
+  115  kubectl get pods -owide
+  116  ls
+  117  cp mypod2.yml deploypod.yml
+  118  ls
+  119  vi deploypod.yml 
+  120  kubectl apply -f deploypod.yml 
+  121  kubectl get deployments
+  122  kubectl get replicaset
+  123  kubectl get pods
+  124  vi deploypod.yml 
+  125  kubectl apply -f deploypod.yml 
+  126  kubectl get pods
+  127  docker images
+  128  vi deploypod.yml 
+  129  kubectl apply -f deploypod.yml 
+  130  kubectl get pods
+  131  vi deploypod.yml 
+  132  kubectl apply -f deploypod.yml 
+  133  kubectl get pods
+  134  vi deploypod.yml 
+  135  kubectl apply -f deploypod.yml 
+  136  kubectl get pods
+  137  kubectl delete replicaset replica2-869fd99dcf-2gbkw
+  138  kubectl get pods
+  139  kubectl get nodes
+  140  kubectl get services
+  141  kubectl get pods
+  142  ls
+  143  kubectl get namespace
+  144  kubectl get pods -n kube-system
+  145  kubectl get pods -n kube-node-lease
+  146  kubectl get pods -n kube-public
+  147  kubectl get pods -n default
+  148  kubectl delete pod multicontainers
+  149  kubectl delete replicaset replica1
+  150  kubectl delete replicaset replica2
+  151  kubectl delete deployment replica1 replica2
+  152  kubectl get pods
+  153  kubectl get services
+  154  kubectl delete service multisvc replicaservice
+  155  ls
+  156  history
+  157  history>historyfile
+  158  kubectl create namespace jenkins
+  159  ls
+  160  kubectl get namespace
+  161  vi mypod.yml
+  162  kubectl apply -f mypod.yml
+  163  kubectl get pods
+  164  ls
+  165  kubectl get pods jenkins
+  166  kubectl get pods -n jenkins
+  167  kubectl apply -f deploypod.yml -n jenkins
+  168  kubectl get pods -n jenkins
+  169  history>historyfile
+    1  ls
+    2  vi dockerinstall.sh
+    3  ls
+    4  vi dockerinstall.sh
+    5  sh dockerinstall.sh 
+    6  sudo hostnamectl set-hostname "k8s-master"
+    7  .
+    8  swapoff -a
+    9  vi /etc/sysctl.conf
+   10  sudo sysctl -p
+   11  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add
+   12  sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
+   13  sudo apt update
+   14  sudo apt install -y kubelet kubeadm kubectl
+   15  kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address=172.31.82.203
+   16  mkdir -p $HOME/.kube
+   17  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+   18  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+   19  export KUBECONFIG=/etc/kubernetes/admin.conf
+   20  kubectl get nodes
+   21  kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
+   22  kubectl get nodes
+   23  kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
+   24  kubectl get nodes
+   25  kubectl get nodes
+   26  kubectl getpodes -A
+   27  kubeadm token create --print-join-command
+   28  kubectl get nodes
+   29  kubectl getpodes -A
+   30  kubectl get pods -A
+   31  kubectl get nodes
+   32  kubectl get pods -A
+   33  kubectl get pods
+   34  vi mypod.yml
+   35  vi service2.yml 
+   36  kubectl apply -f service2.yml 
+   37  exit
+   38  clear
+   39  vi mypod.yml 
+   40  kubectl apply -f mypod.yml 
+   41  vi mypod.yml 
+   42  kubectl apply -f mypod.yml 
+   43  kubectl get pods
+   44  kubectl get pods -owide
+   45  kubectl get services
+   46  vi myservice.yml
+   47  kubectl apply -f myservice.yml 
+   48  vi myservice.yml
+   49  kubectl apply -f myservice.yml 
+   50  vi myservice.yml
+   51  kubectl apply -f myservice.yml 
+   52  kubectl get services
+   53  kubectl apply -f myservice.yml 
+   54  vi myservice.yml
+   55  kubectl apply -f myservice.yml 
+   56  vi myservice.yml
+   57  kubectl get pods
+   58  vi service2.yml
+   59  kubectl apply -f service2.yml 
+   60  vi service2.yml
+   61  kubectl apply -f service2.yml 
+   62  vi service2.yml
+   63  kubectl apply -f service2.yml 
+   64  ls
+   65  cat mypod.yml 
+   66  kubectl get services
+   67  vi service2.yml
+   68  kubectl apply -f service2.yml 
+   69  vi service2.yml
+   70  kubectl apply -f service2.yml 
+   71  vi service2.yml
+   72  kubectl apply -f service2.yml 
+   73  vi service2.yml 
+   74  hubectl get pods
+   75  kubectl get pods
+   76  vi mypod.yml 
+   77  kubectl apply -f mypod.yml 
+   78  kubectl apply -f service2.yml 
+   79  vi service2.yml 
+   80  kubectl apply -f service2.yml 
+   81  vi service2.yml 
+   82  kubectl apply -f service2.yml 
+   83  kubectl get services
+   84  kubectl get pods
+   85  kubectl exec -it multicontainers -c jenkins -- /bin/bash
+   86  vi service2.yml 
+   87  kubectl get pods
+   88  vi mypod2.yml
+   89  ls
+   90  cat mypod.yml
+   91  vi mypod2.yml
+   92  kubectl apply -f mypod2.yml
+   93  vi mypod2.yml
+   94  kubectl apply -f mypod2.yml
+   95  vi mypod2.yml
+   96  kubectl apply -f mypod2.yml
+   97  vi mypod2.yml
+   98  kubectl apply -f mypod2.yml
+   99  kobectl get pods
+  100  kubectl get pods
+  101  kubectl get nodes
+  102  kubectl delete pod replica1-kbvd6
+  103  kubectl get pods
+  104  kubectl get replicaset
+  105  vi mypod2.yml
+  106  kubectl apply -f mypod2.yml
+  107  kubectl get replicaset
+  108  kubectl get pods
+  109  vi replicaservice.yml
+  110  kubectl apply -f replicaservice.yml 
+  111  vi replicaservice.yml
+  112  kubectl apply -f replicaservice.yml 
+  113  kubectl get services
+  114  kubectl get pods
+  115  kubectl get pods -owide
+  116  ls
+  117  cp mypod2.yml deploypod.yml
+  118  ls
+  119  vi deploypod.yml 
+  120  kubectl apply -f deploypod.yml 
+  121  kubectl get deployments
+  122  kubectl get replicaset
+  123  kubectl get pods
+  124  vi deploypod.yml 
+  125  kubectl apply -f deploypod.yml 
+  126  kubectl get pods
+  127  docker images
+  128  vi deploypod.yml 
+  129  kubectl apply -f deploypod.yml 
+  130  kubectl get pods
+  131  vi deploypod.yml 
+  132  kubectl apply -f deploypod.yml 
+  133  kubectl get pods
+  134  vi deploypod.yml 
+  135  kubectl apply -f deploypod.yml 
+  136  kubectl get pods
+  137  kubectl delete replicaset replica2-869fd99dcf-2gbkw
+  138  kubectl get pods
+  139  kubectl get nodes
+  140  kubectl get services
+  141  kubectl get pods
+  142  ls
+  143  kubectl get namespace
+  144  kubectl get pods -n kube-system
+  145  kubectl get pods -n kube-node-lease
+  146  kubectl get pods -n kube-public
+  147  kubectl get pods -n default
+  148  kubectl delete pod multicontainers
+  149  kubectl delete replicaset replica1
+  150  kubectl delete replicaset replica2
+  151  kubectl delete deployment replica1 replica2
+  152  kubectl get pods
+  153  kubectl get services
+  154  kubectl delete service multisvc replicaservice
+  155  ls
+  156  history
+  157  history>historyfile
+  158  kubectl create namespace jenkins
+  159  ls
+  160  kubectl get namespace
+  161  vi mypod.yml
+  162  kubectl apply -f mypod.yml
+  163  kubectl get pods
+  164  ls
+  165  kubectl get pods jenkins
+  166  kubectl get pods -n jenkins
+  167  kubectl apply -f deploypod.yml -n jenkins
+  168  kubectl get pods -n jenkins
+  169  history>historyfile
+  170  vi namespaceresoQu.yml
+  171  kubectl apply -f namespaceresoQu.yml 
+  172  kubectl get pods -n jenkins
+  173  kubectl delete deployment replica1 -n jenkins
+  174  kubectl get pods -n jenkins
+  175  kubectl apply -f namespaceresoQu.yml 
+  176  kubectl apply -f deploypod.yml 
+  177  kubectl get pods -n jenkins
+  178  vi namespaceresoQu.yml 
+  179  kubectl apply -f deploypod.yml -n jenkins
+  180  kubectl get pods -n jenkins
+  181  vi namespaceresoQu.yml 
+  182  kubectl apply -f namespaceresoQu.yml 
+  183  kubectl get namespace 
+  184  kubectl describe namespace jenkins
+  185  kubectl describe namespace default
+  186  vi limitrange.yml
+  187  kubectl apply -f limitrange.yml 
+  188  vi limitrange.yml
+  189  kubectl apply -f limitrange.yml 
+  190  kubectl get namespace
+  191  kubectl describe  namespace jenkins
+  192  cat limitrange.yml 
+  193  ls
+  194  vi mypod.yml
+  195  kubectl apply -f mypod.yml
+  196  kubectl get pods -n jenkins
+  197  kubectl delete pod multicontainers -n jenkins
+  198  kubectl apply -f mypod.yml
+  199  vi mypod.yml
+  200  kubectl apply -f mypod.yml
+  201  kubectl get pods -n jenkins
+  202  kubectl delete deployment replica1 -n jenkins
+  203  kubectl apply -f mypod.yml
+  204  kubectl describe namespace jenkins
+  205  ls
+  206  kubectl delete -f limitrange.yml namespaceresoQu.yml 
+  207  kubectl delete -f limitrange.yml
+  208  kubectl delete -f namespaceresoQu.yml 
+  209  ls
+  210  kubectl apply -f mypod.yml
+  211  kubectl describe namespace jenkins
+  212  kubectl get pods
+  213  kubectl get pods -n jenkins
+  214  kubect decsribe pod multicontainers -n jenkins
+  215  kubectl describe pod multicontainers -n jenkins
+  216  vi mypod.yml
+  217  kubectl apply -f mypod.yml
+  218  kubectl delete  -f mypod.yml
+  219  kubectl apply  -f mypod.yml
+  220  kubectl describe pod multicontainers -n jenkins
+  221  ls
+  222  vi mypod.yml
+  223  kubectl delete  -f mypod.yml
+  224  kubectl apply  -f mypod.yml
+  225  kubectl describe pod multicontainers -n jenkins
+  226  history >>historyfile
+    1  ls
+    2  vi dockerinstall.sh
+    3  ls
+    4  vi dockerinstall.sh
+    5  sh dockerinstall.sh 
+    6  sudo hostnamectl set-hostname "k8s-master"
+    7  .
+    8  swapoff -a
+    9  vi /etc/sysctl.conf
+   10  sudo sysctl -p
+   11  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add
+   12  sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
+   13  sudo apt update
+   14  sudo apt install -y kubelet kubeadm kubectl
+   15  kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address=172.31.82.203
+   16  mkdir -p $HOME/.kube
+   17  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+   18  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+   19  export KUBECONFIG=/etc/kubernetes/admin.conf
+   20  kubectl get nodes
+   21  kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
+   22  kubectl get nodes
+   23  kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
+   24  kubectl get nodes
+   25  kubectl get nodes
+   26  kubectl getpodes -A
+   27  kubeadm token create --print-join-command
+   28  kubectl get nodes
+   29  kubectl getpodes -A
+   30  kubectl get pods -A
+   31  kubectl get nodes
+   32  kubectl get pods -A
+   33  kubectl get pods
+   34  vi mypod.yml
+   35  vi service2.yml 
+   36  kubectl apply -f service2.yml 
+   37  exit
+   38  clear
+   39  vi mypod.yml 
+   40  kubectl apply -f mypod.yml 
+   41  vi mypod.yml 
+   42  kubectl apply -f mypod.yml 
+   43  kubectl get pods
+   44  kubectl get pods -owide
+   45  kubectl get services
+   46  vi myservice.yml
+   47  kubectl apply -f myservice.yml 
+   48  vi myservice.yml
+   49  kubectl apply -f myservice.yml 
+   50  vi myservice.yml
+   51  kubectl apply -f myservice.yml 
+   52  kubectl get services
+   53  kubectl apply -f myservice.yml 
+   54  vi myservice.yml
+   55  kubectl apply -f myservice.yml 
+   56  vi myservice.yml
+   57  kubectl get pods
+   58  vi service2.yml
+   59  kubectl apply -f service2.yml 
+   60  vi service2.yml
+   61  kubectl apply -f service2.yml 
+   62  vi service2.yml
+   63  kubectl apply -f service2.yml 
+   64  ls
+   65  cat mypod.yml 
+   66  kubectl get services
+   67  vi service2.yml
+   68  kubectl apply -f service2.yml 
+   69  vi service2.yml
+   70  kubectl apply -f service2.yml 
+   71  vi service2.yml
+   72  kubectl apply -f service2.yml 
+   73  vi service2.yml 
+   74  hubectl get pods
+   75  kubectl get pods
+   76  vi mypod.yml 
+   77  kubectl apply -f mypod.yml 
+   78  kubectl apply -f service2.yml 
+   79  vi service2.yml 
+   80  kubectl apply -f service2.yml 
+   81  vi service2.yml 
+   82  kubectl apply -f service2.yml 
+   83  kubectl get services
+   84  kubectl get pods
+   85  kubectl exec -it multicontainers -c jenkins -- /bin/bash
+   86  vi service2.yml 
+   87  kubectl get pods
+   88  vi mypod2.yml
+   89  ls
+   90  cat mypod.yml
+   91  vi mypod2.yml
+   92  kubectl apply -f mypod2.yml
+   93  vi mypod2.yml
+   94  kubectl apply -f mypod2.yml
+   95  vi mypod2.yml
+   96  kubectl apply -f mypod2.yml
+   97  vi mypod2.yml
+   98  kubectl apply -f mypod2.yml
+   99  kobectl get pods
+  100  kubectl get pods
+  101  kubectl get nodes
+  102  kubectl delete pod replica1-kbvd6
+  103  kubectl get pods
+  104  kubectl get replicaset
+  105  vi mypod2.yml
+  106  kubectl apply -f mypod2.yml
+  107  kubectl get replicaset
+  108  kubectl get pods
+  109  vi replicaservice.yml
+  110  kubectl apply -f replicaservice.yml 
+  111  vi replicaservice.yml
+  112  kubectl apply -f replicaservice.yml 
+  113  kubectl get services
+  114  kubectl get pods
+  115  kubectl get pods -owide
+  116  ls
+  117  cp mypod2.yml deploypod.yml
+  118  ls
+  119  vi deploypod.yml 
+  120  kubectl apply -f deploypod.yml 
+  121  kubectl get deployments
+  122  kubectl get replicaset
+  123  kubectl get pods
+  124  vi deploypod.yml 
+  125  kubectl apply -f deploypod.yml 
+  126  kubectl get pods
+  127  docker images
+  128  vi deploypod.yml 
+  129  kubectl apply -f deploypod.yml 
+  130  kubectl get pods
+  131  vi deploypod.yml 
+  132  kubectl apply -f deploypod.yml 
+  133  kubectl get pods
+  134  vi deploypod.yml 
+  135  kubectl apply -f deploypod.yml 
+  136  kubectl get pods
+  137  kubectl delete replicaset replica2-869fd99dcf-2gbkw
+  138  kubectl get pods
+  139  kubectl get nodes
+  140  kubectl get services
+  141  kubectl get pods
+  142  ls
+  143  kubectl get namespace
+  144  kubectl get pods -n kube-system
+  145  kubectl get pods -n kube-node-lease
+  146  kubectl get pods -n kube-public
+  147  kubectl get pods -n default
+  148  kubectl delete pod multicontainers
+  149  kubectl delete replicaset replica1
+  150  kubectl delete replicaset replica2
+  151  kubectl delete deployment replica1 replica2
+  152  kubectl get pods
+  153  kubectl get services
+  154  kubectl delete service multisvc replicaservice
+  155  ls
+  156  history
+  157  history>historyfile
+  158  kubectl create namespace jenkins
+  159  ls
+  160  kubectl get namespace
+  161  vi mypod.yml
+  162  kubectl apply -f mypod.yml
+  163  kubectl get pods
+  164  ls
+  165  kubectl get pods jenkins
+  166  kubectl get pods -n jenkins
+  167  kubectl apply -f deploypod.yml -n jenkins
+  168  kubectl get pods -n jenkins
+  169  history>historyfile
+  170  vi namespaceresoQu.yml
+  171  kubectl apply -f namespaceresoQu.yml 
+  172  kubectl get pods -n jenkins
+  173  kubectl delete deployment replica1 -n jenkins
+  174  kubectl get pods -n jenkins
+  175  kubectl apply -f namespaceresoQu.yml 
+  176  kubectl apply -f deploypod.yml 
+  177  kubectl get pods -n jenkins
+  178  vi namespaceresoQu.yml 
+  179  kubectl apply -f deploypod.yml -n jenkins
+  180  kubectl get pods -n jenkins
+  181  vi namespaceresoQu.yml 
+  182  kubectl apply -f namespaceresoQu.yml 
+  183  kubectl get namespace 
+  184  kubectl describe namespace jenkins
+  185  kubectl describe namespace default
+  186  vi limitrange.yml
+  187  kubectl apply -f limitrange.yml 
+  188  vi limitrange.yml
+  189  kubectl apply -f limitrange.yml 
+  190  kubectl get namespace
+  191  kubectl describe  namespace jenkins
+  192  cat limitrange.yml 
+  193  ls
+  194  vi mypod.yml
+  195  kubectl apply -f mypod.yml
+  196  kubectl get pods -n jenkins
+  197  kubectl delete pod multicontainers -n jenkins
+  198  kubectl apply -f mypod.yml
+  199  vi mypod.yml
+  200  kubectl apply -f mypod.yml
+  201  kubectl get pods -n jenkins
+  202  kubectl delete deployment replica1 -n jenkins
+  203  kubectl apply -f mypod.yml
+  204  kubectl describe namespace jenkins
+  205  ls
+  206  kubectl delete -f limitrange.yml namespaceresoQu.yml 
+  207  kubectl delete -f limitrange.yml
+  208  kubectl delete -f namespaceresoQu.yml 
+  209  ls
+  210  kubectl apply -f mypod.yml
+  211  kubectl describe namespace jenkins
+  212  kubectl get pods
+  213  kubectl get pods -n jenkins
+  214  kubect decsribe pod multicontainers -n jenkins
+  215  kubectl describe pod multicontainers -n jenkins
+  216  vi mypod.yml
+  217  kubectl apply -f mypod.yml
+  218  kubectl delete  -f mypod.yml
+  219  kubectl apply  -f mypod.yml
+  220  kubectl describe pod multicontainers -n jenkins
+  221  ls
+  222  vi mypod.yml
+  223  kubectl delete  -f mypod.yml
+  224  kubectl apply  -f mypod.yml
+  225  kubectl describe pod multicontainers -n jenkins
+  226  history >>historyfile
+  227  ls
+  228  cat -n historyfile 
+  229  clear
+  230  ls
+  231  cp deploypod.yml daemonset.yml
+  232  ls
+  233  vi daemonset.yml 
+  234  kubectl apply -f daemonset.yml 
+  235  kubectl get pods
+  236  kubectl get pods -owide
+  237  kubectl get daemonset
+  238  history >>historyfile
