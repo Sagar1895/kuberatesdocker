@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: multisvcpod
+spec:
+  type: nodeport
+  selector:
+    app: myapp1
+  ports:
+    - name: jenkins
+      protocol: TCP
+      nodeport: 30121
+      port: 8090
+      targetPort: 8080
+    - name: tomacat
+      protocol: TCP
+      nodeport: 30122
+      port: 8095
+      targetPort: 8085

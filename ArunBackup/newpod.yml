@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: arunreplica
+spec:
+  replicas: 4
+  selector: 
+    matchLabels:
+      app: jenkinsreplica
+  template:
+    metadata: 
+      name: mypod
+      labels: 
+        app: jenkinsreplica
+    spec: 
+      containers:
+        - name: jenkins
+          image: jenkins/jenkins:lts  
