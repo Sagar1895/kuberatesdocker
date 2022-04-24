@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: replicaconfig
+spec: 
+  replicas: 4
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 2
+      maxUnavailable: 1
+  selector:
+    matchLabels:
+      app: jenkinsreplica1
+  template: 
+    metadata: 
+      name: singleconta
+      labels: 
+        app: jenkinsreplica1
+    spec: 
+      containers:
+        - name: tomcat
+          image: tomcat:latest
+          volumeMounts: 
+            - name: configvolume
+              mountPath: /usr/local/tomcat/webapps
+            - name: secretvolume
+              mountPath: /usr/local/tomcat/webapps 
+      volumes:
+        - name: configvolume
+          configMap: 
+            name: testfile
+        - name: secretvolume
+          secret:
+            secretname: mysecret 
