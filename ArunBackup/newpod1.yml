@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: arunreplica1
+spec:
+  replicas: 4
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 4
+      maxUnavailable: 0
+  selector: 
+    matchLabels:
+      app: jenkinsreplica1
+  template:
+    metadata: 
+      name: mypod1
+      labels: 
+        app: jenkinsreplica1
+    spec: 
+      containers:
+        - name: tomcat
+          image: tomcat:latest  

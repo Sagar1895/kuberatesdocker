@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: multicontainers
+  labels: 
+    app: myapp1
+    type: frontend   
+spec: 
+  containers:
+    - name: jenkins
+      image: jenkins/jenkins:lts
+    - name: tomcat
+      image: anilpu3/cicd-build-docker-repo:latest

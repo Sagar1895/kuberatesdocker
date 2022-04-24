@@ -1,0 +1,19 @@
+---
+- hosts: all
+  tasks: 
+    - name: installing_package
+      apt: 
+        name: "{{ item }}"
+        state: latest
+      with_items: 
+        - git 
+        - wget
+        - vim
+      become: yes
+    - name: copy
+      copy: copy_files
+      copy:
+        src: /home/ubuntu/ansiblescript.yml
+        dest: /home/ubuntu  
+
+

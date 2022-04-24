@@ -1,0 +1,222 @@
+    1  sudo vi /etc/ssh/sshd_config
+    2  ssh sagaronkar@172.31.17.232
+    3  useradd -m sagar
+    4  ls /home
+    5  ssh sagaronkar@172.31.17.232
+    6  sudo su -
+    7  ssh sagaronkar@172.31.17.232
+    8  su - sagar
+    9  sudo su -
+   10  sudo vi /etc/ssh/sshd_config
+   11  ssh sagaronkar@172.31.17.232
+   12  ssh sagarnew@172.31.82.89
+   13  sudo su -
+   14  clear
+   15  ssh sagarnew@172.31.82.89
+   16  sudo su -
+   17  clear
+   18  ls
+   19  vi sagarpem
+   20  cat -n sagarpem
+   21  vi sagarpem
+   22  vi sagarpemkey
+   23  ls
+   24  clear
+   25  ssh sagarnew@172.31.82.89
+   26  ssh sagaronkar@172.31.17.232
+   27  clear
+   28  ls /home
+   29  clear
+   30  ls /home
+   31  cd .ssh
+   32  ls -a
+   33  vi authorized_keys
+   34  cd
+   35  ssh sagaronkar@172.31.17.232
+   36  ls /home
+   37  cd .ssh
+   38  ls
+   39  cat authorized_keys
+   40  vi authorized_keys
+   41  cd
+   42  ssh sagaronkar@172.31.17.232
+   43  ssh ubuntu@172.31.17.232
+   44  sudo vi /etc/ssh/sshd_config
+   45  ssh ubuntu@172.31.17.232
+   46  ssh sagaronkar@172.31.17.232
+   47  clear
+   48  cd .ssh
+   49  ls
+   50  cat authorized_keys
+   51  vi authorized_keys
+   52  cd
+   53  exit
+   54  cd .ssh
+   55  ls 
+   56  ssh-keygen
+   57  ls -s
+   58  ls -a
+   59  cat id_rsa.pub
+   60  ssh sagaronkar@172.31.17.232
+   61  clear
+   62  sudo su -
+   63  sudo su
+   64  clear
+   65  cd /home
+   66  cd
+   67  ls /home
+   68  useradd -m sagaronkar
+   69  sudo useradd -m sagaronkar
+   70  passwd sagaronkar
+   71  sudo passwd sagaronkar
+   72  su - sagaronkar
+   73  exit
+   74  ls
+   75  git --version
+   76  git --wget
+   77  wget --version
+   78  exit
+   79  clear
+   80  sudo su -
+   81  clear
+   82  sudo su -
+   83  cd /opt/tomcat10/
+   84  cd conf/
+   85  pwd
+   86  vi server.xml 
+   87  cd ..
+   88  cd bin/
+   89  ./shutdown.sh
+   90  ./startup.sh
+   91  ./shutdown.sh
+   92  ./startup.sh
+   93  clear
+   94  cd /opt
+   95  ls
+   96  clear
+   97  ls
+   98  sudo su -
+   99  clear
+  100  ls
+  101  cd docker_images/
+  102  ls
+  103  docker images
+  104  cd
+  105  docker run -it ubuntu:20.04
+  106  docker ps -a
+  107  ls
+  108  history>>historyfile
+    1  sudo vi /etc/ssh/sshd_config
+    2  ssh sagaronkar@172.31.17.232
+    3  useradd -m sagar
+    4  ls /home
+    5  ssh sagaronkar@172.31.17.232
+    6  sudo su -
+    7  ssh sagaronkar@172.31.17.232
+    8  su - sagar
+    9  sudo su -
+   10  sudo vi /etc/ssh/sshd_config
+   11  ssh sagaronkar@172.31.17.232
+   12  ssh sagarnew@172.31.82.89
+   13  sudo su -
+   14  clear
+   15  ssh sagarnew@172.31.82.89
+   16  sudo su -
+   17  clear
+   18  ls
+   19  vi sagarpem
+   20  cat -n sagarpem
+   21  vi sagarpem
+   22  vi sagarpemkey
+   23  ls
+   24  clear
+   25  ssh sagarnew@172.31.82.89
+   26  ssh sagaronkar@172.31.17.232
+   27  clear
+   28  ls /home
+   29  clear
+   30  ls /home
+   31  cd .ssh
+   32  ls -a
+   33  vi authorized_keys
+   34  cd
+   35  ssh sagaronkar@172.31.17.232
+   36  ls /home
+   37  cd .ssh
+   38  ls
+   39  cat authorized_keys
+   40  vi authorized_keys
+   41  cd
+   42  ssh sagaronkar@172.31.17.232
+   43  ssh ubuntu@172.31.17.232
+   44  sudo vi /etc/ssh/sshd_config
+   45  ssh ubuntu@172.31.17.232
+   46  ssh sagaronkar@172.31.17.232
+   47  clear
+   48  cd .ssh
+   49  ls
+   50  cat authorized_keys
+   51  vi authorized_keys
+   52  cd
+   53  exit
+   54  cd .ssh
+   55  ls 
+   56  ssh-keygen
+   57  ls -s
+   58  ls -a
+   59  cat id_rsa.pub
+   60  ssh sagaronkar@172.31.17.232
+   61  clear
+   62  sudo su -
+   63  sudo su
+   64  clear
+   65  cd /home
+   66  cd
+   67  ls /home
+   68  useradd -m sagaronkar
+   69  sudo useradd -m sagaronkar
+   70  passwd sagaronkar
+   71  sudo passwd sagaronkar
+   72  su - sagaronkar
+   73  exit
+   74  ls
+   75  git --version
+   76  git --wget
+   77  wget --version
+   78  exit
+   79  clear
+   80  sudo su -
+   81  clear
+   82  sudo su -
+   83  cd /opt/tomcat10/
+   84  cd conf/
+   85  pwd
+   86  vi server.xml 
+   87  cd ..
+   88  cd bin/
+   89  ./shutdown.sh
+   90  ./startup.sh
+   91  ./shutdown.sh
+   92  ./startup.sh
+   93  clear
+   94  cd /opt
+   95  ls
+   96  clear
+   97  ls
+   98  sudo su -
+   99  clear
+  100  ls
+  101  cd docker_images/
+  102  ls
+  103  docker images
+  104  cd
+  105  docker run -it ubuntu:20.04
+  106  docker ps -a
+  107  ls
+  108  history>>historyfile
+  109  ls
+  110  docker run -it my-ub-image:latest
+  111  cd docker_images/
+  112  cd
+  113  docker ps -a
+  114  history>>historyfile

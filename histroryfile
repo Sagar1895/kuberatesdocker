@@ -1,0 +1,97 @@
+    1  ls
+    2  cd webapps
+    3  ls
+    4  cd webapps.dist
+    5  cd 
+    6  cd webapps.dist
+    7  ls
+    8  cp -R * ../webapps
+    9  cd ..
+   10  cd webapps
+   11  ls
+   12  apt -get update
+   13  apt-get update
+   14  apt-get install vim
+   15  ls
+   16  vi host-manager/
+   17  ls
+   18  vi host-manager/META-INF/context.xml 
+   19  vi manager/META-INF/context.xml 
+   20  cd ..
+   21  ls
+   22  cd conf/
+   23  ls
+   24  vi tomcat-users.xml
+   25  vi tomcat-users.xml
+   26  exit
+   27  ls
+   28  cd webapps
+   29  ls
+   30  cd ..
+   31  cd conf/
+   32  ls
+   33  vi tomcat-users.xml
+   34  cd ..
+   35  ls
+   36  cd webapps
+   37  ls
+   38  cd manager/
+   39  ls
+   40  cd META-INF/
+   41  ls
+   42  vi context.xml 
+   43  ls
+   44  cd ../..
+   45  cd ..
+   46  ls
+   47  vi webapps/host-manager/
+   48  vi webapps/host-manager/META-INF/context.xml 
+   49  exit
+   50  ls
+   51  cd webapps
+   52  ls
+   53  cd host-manager/
+   54  ls
+   55  cd META-INF/
+   56  ls
+   57  vi context.xml 
+   58  cd  ..
+   59  cd ../..
+   60  cd webapps
+   61  ls
+   62  cd manager/
+   63  ls
+   64  cd ..
+   65  cd ..
+   66  ls
+   67  vi conf/
+   68  vi conf
+   69  cd conf/
+   70  ls
+   71  vi tomcat-users.xml
+   72  exit
+   73  ls
+   74  cd webapps
+   75  ls
+   76  rmdir sagar
+   77  cd
+   78  exit
+   79  ls
+   80  cdc webapps
+   81  ls
+   82  cd webapps
+   83  ls
+   84  rm hello-world.war
+   85  ls
+   86  cd 
+   87  exit
+   88  ls
+   89  history
+   90  history>history
+   91  ls
+   92  cat -n history 
+   93  ls
+   94  cd webapps
+   95  ls
+   96  history 
+   97  history>histroryfile 
