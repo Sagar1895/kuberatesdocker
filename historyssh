@@ -1,0 +1,10 @@
+    1  clear
+    2  vi sagarpem
+    3  cat -n sagarpem
+    4  ssh -i sagarpem
+    5  ssh -i sagarpem ubuntu@172.31.17.232
+    6  chmod 400 sagarpem
+    7  ssh -i sagarpem ubuntu@172.31.17.232
+    8  clear
+    9  ssh sagaronkar@172.31.17.232
+   10  history >>historyfile

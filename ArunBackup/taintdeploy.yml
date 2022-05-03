@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: arunreplica1
+spec:
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 2
+      maxUnavailable: 3
+  selector: 
+    matchLabels:
+      app: jenrep
+  template:
+    metadata: 
+      name: mypod1
+      labels: 
+        app: jenrep
+    spec: 
+         #tolerations:
+         #- key: "colour"
+         #operator: "Equal"
+         #value: "red"
+         #effect: "NoSchedule"
+         #nodeSelector:
+         #environment: dev      
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+            - weight: 1
+              preference:
+                matchExpressions:
+                - key: environment
+                  operator: In
+                  values:
+                    - dev
+      containers:
+        - name: tomcat
+          image: tomcat:9.0  

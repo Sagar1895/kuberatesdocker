@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: daemon
+spec:
+  selector: 
+    matchLabels:
+      app: jendem
+  template:
+    metadata: 
+      name: mypod1
+      labels: 
+        app: jendem
+    spec: 
+      containers:
+        - name: tomcat
+          image: tomcat:9.0  
