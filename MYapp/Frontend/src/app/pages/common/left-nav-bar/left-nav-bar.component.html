@@ -1,0 +1,10 @@
+<app-sidebar #appSidebar [fixed]="true" [display]="'lg'" [minimized]="sidebarMinimized"
+  (minimizedChange)="toggleMinimize($event)">
+
+  <app-sidebar-nav [navItems]="navItems" [perfectScrollbar] [disabled]="appSidebar.minimized">
+  </app-sidebar-nav>
+
+  <span class="m-2 p-2 text-custom"> <i class="cil-cart p-1"></i> v1.0</span>
+  <app-sidebar-minimizer></app-sidebar-minimizer>
+
+</app-sidebar>

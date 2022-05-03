@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <p class="fw-bold text-uppercase">My Cart</p>
+        </div>
+        <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 ">
+            <div class="row shadow mb-2  no-gutters" *ngFor="let item of cartItems">
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <img [src]="item.image" class="card-img w-100" height="150" alt="...">
+                </div>
+                <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <a class="font-weight-bold d-block"  (click)="goToProductDetails()">{{item.name}}</a>
+                            <span class="d-block">{{item.color}}</span>
+                            <span class="font-weight-bold d-block">Rs. {{item.price}}</span>
+                        </div>
+                        <a class="btn btn-primary mb-1"><i class="fa fa-cart-plus p-1"></i>Change Qty</a> &nbsp;
+                        <a class="btn btn-success mb-1"><i class="fa fa-trash p-1"></i>Remove Item</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 shadow mb-2">
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">PRICE DETAILS</h5>
+                  <hr/>
+                  <div class="card-text" *ngFor="let item of priceDetails">
+                    <p class="font-weight-bold d-block">Price({{item.qty}} item) <span class="float-end"> {{item.price}}</span></p>
+                    <p class="font-weight-bold d-block">Discount <span class="float-end">{{item.discount}}</span></p>
+                    <p class="font-weight-bold d-block">Delivery Charge <span class="float-end">{{item.deliveryCharge}}</span></p>
+                    <hr/>
+                    <p class="font-weight-bold d-block">TOTAL AMOUNT <span class="float-end">{{item.totalAmount}}</span></p>
+                  </div>
+                  <a class="btn btn-warning fw-bold d-block mb-1" (click)="onPlaceOrder()"><i class="fa fa-cart-plus p-1"></i>PLACE ORDER</a>
+                </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,75 @@
+
+                <form novalidate>
+
+                    <div class="row">
+                        <div class="col-6 form-group form-outline">
+                            <input type="text" id="name" class="form-control" placeholder=" " autocomplete="off" />
+                            <label class="form-label" for="name">Name</label>
+                            <i class="fas fa-user"></i>
+                        </div>
+
+                        <div class="col-6 form-group form-outline">
+                            <input type="text" id="phone" class="form-control" placeholder=" " autocomplete="off" />
+                            <label class="form-label" for="phone">Phone Number</label>
+                            <i class="fas fa-phone"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="form-group form-outline">
+                            <input type="text" id="address1" class="form-control" placeholder=" " autocomplete="off" />
+                            <label class="form-label" for="address1">Address Line 1</label>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="form-group form-outline">
+                            <input type="text" id="address2" class="form-control" placeholder=" " autocomplete="off" />
+                            <label class="form-label" for="address2">Address Line 2</label>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-6 form-group form-outline">
+                                <input type="text" id="state" class="form-control" placeholder=" " autocomplete="off" />
+                                <label class="form-label" for="state">State</label>
+                                <i class="fas fa-city"></i>
+                            </div>
+
+                            <div class="col-6 form-group form-outline">
+                                <input type="text" id="pinCode" class="form-control" placeholder=" "
+                                    autocomplete="off" />
+                                <label class="form-label" for="pinCode">Pincode</label>
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="row ml-2 mr-2">
+                            <div class="col-3 form-check-inline">
+                                <label class="form-check-label" for="receiveOn">Address Type :</label>
+                            </div>
+        
+                            <div class="col-3 form-check form-check-inline">
+                                <input class="form-check-input" type="radio"  id="inlineRadio1"
+                                    value="residence" >
+                                <label class="form-check-label" for="inlineRadio1">Residence</label>
+                            </div>
+        
+                            <div class="col-3 form-check form-check-inline">
+                                <input class="form-check-input" type="radio"  id="inlineRadio2"
+                                    value="office" >
+                                <label class="form-check-label" for="inlineRadio2">Office</label>
+                            </div>
+        
+                        </div>
+                        <!-- <hr/> -->
+                     <button type="button" class="btn btn-primary float-end" (click)="fnAddDeploytment()">Save</button>
+                        <button type="button" class="btn btn-secondary float-end mr-2" data-bs-dismiss="modal"
+                        >Cancel</button>
+                </form>
+            

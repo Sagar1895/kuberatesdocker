@@ -1,0 +1,40 @@
+<app-header [navbarBrandRouterLink]="['user/products']" [fixed]="true"
+  [navbarBrandFull]="{src: 'assets/img/logo.png', width: 150, height: 40, alt: 'MyCart Logo'}"
+  [sidebarToggler]="'lg'" [asideMenuToggler]="false" [mobileAsideMenuToggler]="false">
+  
+  <nav class="nav navbar-nav d-md-down-none">
+      <form class="d-flex">
+        <input class="form-control me-2 search-bar" type="search" placeholder="Search Products" aria-label="Search">
+        
+        <button class="btn btn-custom" type="submit"><i class="fa fa-search"></i>&nbsp;Search</button>
+      </form>
+  </nav>
+
+  <ul class="nav navbar-nav d-md-down-none">
+    <li class="nav-item px-3">
+      <a class="nav-link" [routerLink]="['user/products']">Home</a>
+    </li>
+  </ul>
+
+  <ul class="nav navbar-nav ml-auto mr-2">
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/user/cart']"><i class="cil-cart"></i><span class="badge badge-pill badge-danger">5</span></a>
+    </li>
+  </ul>
+
+  <ul class="nav navbar-nav mr-2">
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" (click)="false">
+        <img src="assets/img/8.jpg" width="30" height="15" class="img-avatar" alt="admin@bootstrapmaster.com"/>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right">
+        <div class="dropdown-header text-center"><strong>Account</strong></div>
+        <a class="dropdown-item" [routerLink]="['/user/profile']" ><i class="fa fa-user text-primary"></i> Profile</a>
+        <a class="dropdown-item" [routerLink]="['/user/order-details']"><i class="fa fa-shopping-cart text-success"></i> Orders</a>
+        <a class="dropdown-item" [routerLink]="['/user/address']"><i class="fa fa-address-card text-warning"></i> Address</a>
+        <a class="dropdown-item" (click)="onLogout()"><i class="fa fa-sign-out text-danger"></i> Logout</a>
+      </div>
+    </li>
+  </ul>
+
+</app-header>

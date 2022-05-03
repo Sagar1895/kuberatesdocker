@@ -1,0 +1,207 @@
+[
+    {
+        "title": "Dashboard",
+        "parentId": "dashboard",
+        "icon": "fas fa-tachometer-alt",
+        "routerLink": [
+            "/dashboard"
+        ],
+        "disabled": false,
+        "visible": true,
+        "showChildren": false
+    },
+    {
+        "title": "Setup",
+        "parentId": "setup",
+        "icon": "fas fa-user-cog",
+        "disabled": false,
+        "visible": true,
+        "showChildren": false,
+        "children": [
+            {
+                "title": "Tenants",
+                "icon": "fas fa-users",
+                "routerLink": [
+                    "setup/tenants"
+                ],
+                "disabled": false,
+                "visible": true
+            },
+            {
+                "title": "Users",
+                "icon": "fas fa-user-friends",
+                "routerLink": [
+                    "setup/users"
+                ],
+                "disabled": false,
+                "visible": true
+            },
+            {
+                "title": "Permission",
+                "icon": "fas fa-user-edit",
+                "routerLink": [
+                    "setup/permission"
+                ],
+                "disabled": false,
+                "visible": true
+            }
+        ]
+    },
+    {
+        "title": "Process",
+        "parentId": "process",
+        "icon": "fas fa-project-diagram",
+        "disabled": false,
+        "visible": true,
+        "showChildren": false,
+        "children": [
+            {
+                "title": "Child 1",
+                "icon": "fas fa-plus-circle",
+                "routerLink": [],
+                "disabled": false,
+                "visible": true
+            },
+            {
+                "title": "Child 2",
+                "icon": "fas fa-plus-circle",
+                "routerLink": [],
+                "disabled": false,
+                "visible": true
+            }
+        ]
+    },
+    {
+        "title": "Report",
+        "parentId": "report",
+        "icon": "fas fa-file-signature",
+        "disabled": false,
+        "visible": true,
+        "showChildren": false,
+        "children": [
+            {
+                "title": "Global Search",
+                "icon": "fas fa-search",
+                "routerLink": [],
+                "disabled": false,
+                "visible": true
+            },
+            {
+                "title": "Extract",
+                "icon": "fas fa-list-alt",
+                "routerLink": [],
+                "disabled": false,
+                "visible": true
+            },
+            {
+                "title": "Sales",
+                "icon": "fas fa-chart-pie",
+                "routerLink": [],
+                "disabled": false,
+                "visible": true
+            },
+            {
+                "title": "Accounting",
+                "icon": "fas fa-calculator",
+                "routerLink": [],
+                "disabled": false,
+                "visible": true
+            },
+            {
+                "title": "Fulfillment",
+                "icon": "fas fa-fill-drip",
+                "routerLink": [],
+                "disabled": false,
+                "visible": true
+            },
+            {
+                "title": "RMIT Report",
+                "icon": "far fa-address-card",
+                "routerLink": [],
+                "disabled": false,
+                "visible": true
+            }
+        ]
+    },
+    {
+        "title": "Analytics",
+        "parentId": "analytics",
+        "icon": "fas fa-chart-line",
+        "disabled": false,
+        "visible": true,
+        "showChildren": false,
+        "children": [
+            {
+                "title": "Visualize",
+                "icon": "fas fa-chart-area",
+                "routerLink": [],
+                "disabled": false,
+                "visible": true
+            }
+        ]
+    },
+    {
+        "title": "Customers",
+        "parentId": "customer",
+        "icon": "fas fa-user-tie",
+        "disabled": false,
+        "visible": false,
+        "showChildren": false,
+        "children": [
+            {
+                "title": "Customer Details",
+                "icon": "fas fa-tachometer-alt",
+                "routerLink": [
+                    "customer/customer-details"
+                ],
+                "disabled": false,
+                "visible": true
+            },
+            {
+                "title": "Add Customers",
+                "icon": "fas fa-plus-circle",
+                "routerLink": [
+                    "customer/add-customer"
+                ],
+                "disabled": false,
+                "visible": true
+            },
+            {
+                "title": "Search Customer",
+                "icon": "fas fa-search",
+                "routerLink": [
+                    "customer/search-customer"
+                ],
+                "disabled": false,
+                "visible": true
+            },
+            {
+                "title": "Agency",
+                "icon": "fas fa-building",
+                "routerLink": [
+                    "customer/agency"
+                ],
+                "disabled": false,
+                "visible": true
+            },
+            {
+                "title": "Groups",
+                "icon": "fas fa-users",
+                "routerLink": [
+                    "customer/groups"
+                ],
+                "disabled": false,
+                "visible": true
+            },
+            {
+                "title": "Distributor",
+                "icon": "fas fa-bezier-curve",
+                "routerLink": [
+                    "customer/distributor"
+                ],
+                "disabled": false,
+                "visible": true
+            }
+        ]
+    }
+]

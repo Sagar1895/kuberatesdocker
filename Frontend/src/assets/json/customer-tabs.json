@@ -1,0 +1,92 @@
+[
+    {
+        "title": "Customer",
+        "tabId": "customer",
+        "routerLink": [
+            "customer/customer-details"
+        ],
+        "routerLinkActive": true,
+        "disabled": false,
+        "visible": true
+    },
+    {
+        "title": "Orders",
+        "tabId": "orders",
+        "routerLink": [
+            "customer/orders"
+        ],
+        "routerLinkActive": false,
+        "disabled": false,
+        "visible": true
+    },
+    {
+        "title": "Payments",
+        "tabId": "payments",
+        "routerLink": [
+            "customer/payments"
+        ],
+        "routerLinkActive": false,
+        "disabled": false,
+        "visible": true
+    },
+    {
+        "title": "Payment Accounts",
+        "tabId": "payAccounts",
+        "routerLink": [
+            "customer/payment-accounts"
+        ],
+        "routerLinkActive": false,
+        "disabled": false,
+        "visible": true
+    },
+    {
+        "title": "Service",
+        "tabId": "service",
+        "routerLink": [
+            "customer/service"
+        ],
+        "routerLinkActive": false,
+        "disabled": false,
+        "visible": true
+    },
+    {
+        "title": "Demographics",
+        "tabId": "demographics",
+        "routerLink": [
+            "customer/demographics"
+        ],
+        "routerLinkActive": false,
+        "disabled": false,
+        "visible": true
+    },
+    {
+        "title": "Attachment",
+        "tabId": "attachment",
+        "routerLink": [
+            "customer/attachment"
+        ],
+        "routerLinkActive": false,
+        "disabled": false,
+        "visible": true
+    },
+    {
+        "title": "Customer History",
+        "tabId": "custHistory",
+        "routerLink": [
+            "customer/customer-history"
+        ],
+        "routerLinkActive": false,
+        "disabled": false,
+        "visible": true
+    },
+    {
+        "title": "Notes",
+        "tabId": "notes",
+        "routerLink": [
+            "customer/notes"
+        ],
+        "routerLinkActive": false,
+        "disabled": false,
+        "visible": true
+    }
+]

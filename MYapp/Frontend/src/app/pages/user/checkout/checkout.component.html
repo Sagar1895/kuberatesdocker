@@ -1,0 +1,76 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 shadow mb-2  no-gutters">
+
+            <div class="card-body">
+                <h5 class="card-title fw-bold">ORDER DETAILS</h5>
+                <hr />
+                <div class="card-text" *ngFor="let item of cartItems">
+                    <a class="" (click)="goToProductDetails()">{{item.name}} ({{item.color}})</a>
+                    <span class=" float-end">Rs. {{item.price}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 shadow mb-2  no-gutters">
+
+            <div class="card-body">
+                <h5 class="card-title fw-bold">DELIVERY ADDRESS</h5>
+                <hr />
+                <div class="card-text" *ngFor="let item of cartItems">
+                    <a class="" (click)="goToProductDetails()">{{item.name}} ({{item.color}})</a>
+                    <span class=" float-end">Rs. {{item.price}}</span>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 shadow mb-2">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">PRICE DETAILS</h5>
+                <hr />
+                <div class="card-text" *ngFor="let item of priceDetails">
+                    <p class=" d-block">Price({{item.qty}} item) <span class="float-end">
+                            {{item.price}}</span></p>
+                    <p class=" d-block">Discount <span class="float-end">{{item.discount}}</span></p>
+                    <p class="f d-block">Delivery Charge <span
+                            class="float-end">{{item.deliveryCharge}}</span></p>
+                    <hr />
+                    <p class="font-weight-bold d-block">AMOUNT PAYABLE <span class="float-end">{{item.totalAmount}}</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 shadow mb-2">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">PAYMENT METHOD</h5>
+                <hr />
+                <div class="card-text">
+ 
+                    <div class="row ml-2 mr-2">
+                        
+                        <div class="col-12 form-check form-check-inline">
+                            <input class="form-check-input" type="radio"  id="inlineRadio1"
+                                value="residence" >
+                            <label class="form-check-label" for="inlineRadio1">Cash on delivery (COD)</label>
+                        </div>
+    
+                        <div class="col-12 form-check form-check-inline">
+                            <input class="form-check-input" type="radio"  id="inlineRadio2"
+                                value="office" >
+                            <label class="form-check-label" for="inlineRadio2">Prepaid</label>
+                        </div>
+    
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="row">
+        <div class="col-12"> -->
+         <a class="btn btn-warning fw-bold d-block mb-1" (click)="confirmOrder()"><i
+                        class="fa fa-cart-plus p-1"></i>CONFIRM ORDER</a>
+    <!-- </div>
+</div> -->
+</div>

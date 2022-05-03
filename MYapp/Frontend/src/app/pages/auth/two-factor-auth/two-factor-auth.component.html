@@ -1,0 +1,49 @@
+<section class="vh-100">
+    <div class="container-fluid h-custom">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+                <img src="../../../../assets/img/pin.svg" class="img-fluid" alt="Sample image">
+            </div>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                <form novalidate [formGroup]="mfaForm" (ngSubmit)="onVerify()">
+
+                    <div class="d-flex flex-row align-items-center justify-content-center">
+                        <p class="lead fw-bold fw-normal mb-0 me-3">Welcome Mr. Pavan</p>
+                    </div>
+
+                    <div class="form-group form-outline mb-4">
+                        <input type="password" id="pin" class="form-control" placeholder=" " formControlName="pin"
+                            autocomplete="false" [ngClass]="{'border-danger': (submitted && f['pin'].errors)}" />
+                        <label class="form-label pinLabel" for="pin">PIN</label>
+                        <i class="fas fa-key"></i>
+                        <div *ngIf="(submitted || f['pin'].touched) && f['pin'].errors" class="error-message">
+                            <div *ngIf="f['pin'].errors && f['pin'].errors['required']">
+                                * PIN is required
+                            </div>
+                            <div *ngIf="f['pin'].errors && (f['pin'].errors['invalid'])">
+                                * PIN accepts only digits
+                            </div>
+                            <div
+                                *ngIf="f['pin'].errors && !f['pin'].errors['invalid'] && (f['pin'].errors['minlength'])">
+                                * PIN should be of minimum 4 digits
+                            </div>
+                            <div
+                                *ngIf="f['pin'].errors && !f['pin'].errors['invalid'] && (f['pin'].errors['maxlength'])">
+                                * PIN should be of maximum 6 digits
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2 mt-4">
+                        <button class="btn btn-primary" type="submit">Verify</button>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center my-0 pt-2">
+                        <a [routerLink]="['/route-path']" class="link-secondary">Forgot PIN?</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
